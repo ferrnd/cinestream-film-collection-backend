@@ -14,7 +14,8 @@ async function main() {
         "Ficção Científica",
         "Animação",
         "Aventura",
-        "Fantasia"
+        "Fantasia",
+        "Mistério"
     ];
 
     const generoMap = {};
