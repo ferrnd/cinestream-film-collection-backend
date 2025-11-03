@@ -6,7 +6,7 @@ const router = Router();
 router.get("/", streamController.listarTodos);
 router.get("/:id", streamController.listarUm);
 router.post("/", streamController.criar);
-router.delete("/:id", streamController.deletar);
 router.put("/:id", streamController.atualizar);
+router.delete("/:id", streamController.deletar);
 
 export default router;
