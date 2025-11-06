@@ -20,11 +20,3 @@ The frontend application (which consumes this API) is managed in a separate repo
 | **Express** | Web Framework for Routing and Middleware |
 | **Prisma** | ORM (Object-Relational Mapper) |
 | **JavaScript (ES Modules)** | Core Language |
-
-
-Clone the repository and install the dependencies:
-
-```bash
-git clone [YOUR_REPO_URL]
-cd cinestream-film-collection
-npm install
