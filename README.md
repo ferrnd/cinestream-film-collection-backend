@@ -19,7 +19,6 @@ The frontend application (which consumes this API) is managed in a separate repo
 | **Node.js** | Runtime Environment |
 | **Express** | Web Framework for Routing and Middleware |
 | **Prisma** | ORM (Object-Relational Mapper) |
-| **PostgreSQL** | Primary Database |
 | **JavaScript (ES Modules)** | Core Language |
 
 ## ⚙️ Getting Started
