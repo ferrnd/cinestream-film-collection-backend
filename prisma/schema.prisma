@@ -30,3 +30,16 @@ model stream {
 
   @@map("Stream")
 }
+
+model Comentario {
+  id                Int      @id @default(autoincrement())
+  
+  idFilmeCard       String   @map("id_filme_card") 
+  nomeUsuario       String   @map("nome_usuario") 
+  textoComentario   String   @map("texto_comentario")
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@map("Comentarios")
+}
