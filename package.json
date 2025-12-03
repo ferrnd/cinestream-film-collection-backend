@@ -41,6 +41,6 @@
     "@faker-js/faker": "^10.1.0"
   },
   "prisma": {
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js && node prisma/comentarioSeed.js"
   }
 }
