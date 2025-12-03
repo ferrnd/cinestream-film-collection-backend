@@ -3,12 +3,12 @@ import * as comentariosModel from "../models/comentariosModel.js";
 export const listarPorFilmeId = async (req, res) => {
     try {
 
-        const filmeId = req.query.filme_id; 
+        const filmeId = req.params.id;
 
         if (!filmeId) {
             return res.status(400).json({
                 error: "Required field missing",
-                message: "The film ID (string) must be provided in the query parameters (filme_id).",
+                message: "The film ID (string) must be provided in the route parameters.",
                 status: 400,
             });
         }
@@ -22,11 +22,6 @@ export const listarPorFilmeId = async (req, res) => {
             status: 200,
         });
     } catch (error) {
-        res.status(500).json({
-            error: "Internal server error",
-            details: error.message,
-            status: 500,
-        });
     }
 };
 
