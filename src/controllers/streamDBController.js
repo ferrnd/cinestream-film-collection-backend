@@ -1,12 +1,12 @@
-// src/controllers/streamController.js
+// src/controllers/streamDBController.js
 
-import * as streamModel from "../models/streamModel.js";
+import * as streamDBModel from "../models/streamDBModel.js";
 
 // Listar Todos
 export const listarTodos = async (req, res) => {
     try {
         const filtros = req.query; 
-        const streams = await streamModel.encontreTodos(filtros); 
+	const streams = await streamDBModel.encontreTodos(filtros); 
 
         if (!streams || streams.length === 0) {
             return res.status(404).json({
@@ -34,7 +34,7 @@ export const listarTodos = async (req, res) => {
 export const listarUm = async (req, res) => {
     try {
         const id = parseInt(req.params.id);
-        const stream = await streamModel.encontreUm(id);
+	const stream = await streamDBModel.encontreUm(id);
 
         if (!stream) {
             return res.status(404).json({
@@ -73,7 +73,7 @@ export const criar = async (req, res) => {
             });
         }
 
-        const novoStream = await streamModel.criar(req.body);
+	const novoStream = await streamDBModel.criar(req.body);
         res.status(201).json({
             message: "Stream created successfully!",
             stream: novoStream,
@@ -91,7 +91,7 @@ export const deletar = async (req, res) => {
     try {
         const id = parseInt(req.params.id);
 
-        const streamExiste = await streamModel.encontreUm(id);
+	const streamExiste = await streamDBModel.encontreUm(id);
         if (!streamExiste) {
             return res.status(404).json({
                 error: "Stream not found",
@@ -99,7 +99,7 @@ export const deletar = async (req, res) => {
             });
         }
 
-        await streamModel.deletar(id);
+	await streamDBModel.deletar(id);
         res.status(200).json({
             message: "Stream deleted successfully",
         });
@@ -117,7 +117,7 @@ export const atualizar = async (req, res) => {
         const id = parseInt(req.params.id);
         const dados = req.body;
 
-        const streamExiste = await streamModel.encontreUm(id);
+	const streamExiste = await streamDBModel.encontreUm(id);
         if (!streamExiste) {
             return res.status(404).json({
                 error: "Stream does not exist",
@@ -125,7 +125,7 @@ export const atualizar = async (req, res) => {
             });
         }
 
-        const streamAtualizado = await streamModel.atualizar(id, dados);
+	const streamAtualizado = await streamDBModel.atualizar(id, dados);
         res.status(200).json({
             message: "Stream updated successfully",
             stream: streamAtualizado,

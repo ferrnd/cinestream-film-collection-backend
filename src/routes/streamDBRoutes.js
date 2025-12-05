@@ -1,12 +1,12 @@
 import { Router } from "express";
-import * as streamController from "../controllers/streamController.js";
+import * as streamDBController from "../controllers/streamDBController.js";
 
 const router = Router();
 
-router.get("/", streamController.listarTodos);
-router.get("/:id", streamController.listarUm);
-router.post("/", streamController.criar);
-router.put("/:id", streamController.atualizar);
-router.delete("/:id", streamController.deletar);
+router.get("/", streamDBController.listarTodos);
+router.get("/:id", streamDBController.listarUm);
+router.post("/", streamDBController.criar);
+router.put("/:id", streamDBController.atualizar);
+router.delete("/:id", streamDBController.deletar);
 
 export default router;

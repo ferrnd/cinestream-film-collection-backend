@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 import { seedComentarios } from './comentarioSeed.js';
+import { seedStreamDB } from './dbstreamSeed.js';
 
 
 
@@ -191,8 +192,11 @@ async function main() {
     }
 
     console.log("Database seeded successfully! Total de 120 streams inseridos.");
+    
+    // Executa o seeding específico de StreamDB (lista grande de filmes e séries)
+    await seedStreamDB(prisma);
 
-await seedComentarios(prisma);
+    await seedComentarios(prisma);
     
     console.log("Seeding completo.");
 }
