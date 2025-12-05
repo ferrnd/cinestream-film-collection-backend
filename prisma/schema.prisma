@@ -33,13 +33,29 @@ model stream {
 
 model Comentario {
   id                Int      @id @default(autoincrement())
-  
   idFilmeCard       String   @map("id_filme_card") 
   nomeUsuario       String   @map("nome_usuario") 
   textoComentario   String   @map("texto_comentario")
-  
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
 
   @@map("Comentarios")
+}
+
+model StreamDB {
+  id              Int      @id @default(autoincrement())
+  nome            String   @unique
+  descricao       String
+  classificacao   String
+  anoLancamento   Int
+  cardCapa        String
+  video           String? 
+  logo            String? 
+  poster          String? 
+  fundo           String? 
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("StreamDB")
 }
