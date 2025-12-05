@@ -79,9 +79,6 @@ async function main() {
         { nome: "O Show de Truman", descricao: "A vida de um homem é secretamente transmitida em um reality show 24 horas por dia.", classificacao: "Livre", anoLancamento: 1998, genero: "Drama" },
         { nome: "Donnie Darko", descricao: "Um adolescente perturbado recebe a visita de um coelho gigante que lhe informa sobre o fim do mundo.", classificacao: "16+", anoLancamento: 2001, genero: "Ficção Científica" },
         { nome: "À Espera de um Milagre", descricao: "A vida dos guardas de uma prisão de segurança máxima nos anos 30 e um preso com poderes misteriosos.", classificacao: "14+", anoLancamento: 1999, genero: "Drama" },
-
-        // Animes
-
         { nome: "Naruto", descricao: "A jornada de Naruto Uzumaki para se tornar o Hokage e obter reconhecimento.", classificacao: "12+", anoLancamento: 2002, genero: "Ação" },
         { nome: "Vinland Saga", descricao: "A história de Thorfinn, um jovem viking em busca de vingança pela morte de seu pai.", classificacao: "16+", anoLancamento: 2019, genero: "Aventura" },
         { nome: "The Fragrant Flower", descricao: "Uma história sobre um casal em um mundo de ação e romance, enfrentando desafios.", classificacao: "12+", anoLancamento: 2018, genero: "Romance" },

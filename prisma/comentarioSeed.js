@@ -42,6 +42,92 @@ const FILME_IDS = [
 
 const COMENTARIOS_POR_FILME = {
 
+naruto_the_last: [
+    { nomeUsuario: "ShippudenFan", textoComentario: "Uma ótima ponte entre a série principal e Boruto. O foco no casal principal foi lindo!" },
+    { nomeUsuario: "HinaLover", textoComentario: "Finalmente o desenvolvimento que a Hinata merecia. A cena da lua é memorável." },
+    { nomeUsuario: "Tenseigan", textoComentario: "A animação está impecável! As lutas são muito bem coreografadas." },
+    { nomeUsuario: "Kunoichi", textoComentario: "O filme tem um tom mais romântico, mas a ameaça global ainda funciona." },
+    { nomeUsuario: "SextoHokage", textoComentario: "Assista, mas tenha em mente que é mais focado no romance do que na ação." },
+],
+
+frozen: [
+    { nomeUsuario: "Ana&Elsa", textoComentario: "Um clássico moderno da Disney! As músicas são chicletes, no bom sentido." },
+    { nomeUsuario: "Olaf_Melhor", textoComentario: "Olaf rouba a cena! 'Let It Go' é um hino que marcou uma geração." },
+    { nomeUsuario: "ReinoDeArendelle", textoComentario: "A história sobre amor fraternal é muito mais forte do que a de romance clichê." },
+    { nomeUsuario: "WinterWonder", textoComentario: "Visualmente deslumbrante, especialmente as cenas de gelo e neve." },
+    { nomeUsuario: "PrincesaGelada", textoComentario: "Excelente reviravolta no vilão, fugindo do padrão dos contos de fadas." },
+],
+
+anabelle: [
+    { nomeUsuario: "TerrorClassico", textoComentario: "O primeiro filme ainda é o melhor. A boneca é aterrorizante." },
+    { nomeUsuario: "CinefiloDoMedo", textoComentario: "Construção de atmosfera e tensão são o ponto forte, menos nos sustos fáceis." },
+    { nomeUsuario: "MundoInvocacao", textoComentario: "Adoro como ele se conecta ao universo de Invocação do Mal. Dá um bom contexto." },
+    { nomeUsuario: "SemDormir", textoComentario: "A cena no porão me deixou sem fôlego. Medo real!" },
+    { nomeUsuario: "MedrosoAnonimo", textoComentario: "Não é o terror mais original, mas cumpre o que promete: te fazer pular da cadeira." },
+],
+
+liga_da_justica: [
+    { nomeUsuario: "DC_Fã", textoComentario: "A versão do Snyder (Snyder Cut) é a definitiva! Corrigiu todos os problemas da versão de cinema." },
+    { nomeUsuario: "Super_Heroi", textoComentario: "Finalmente uma união épica! Ver o Batman e o Superman juntos vale a pena." },
+    { nomeUsuario: "Flash_Veloz", textoComentario: "O Flash e o Aquaman dão o toque de alívio cômico que o filme precisava." },
+    { nomeUsuario: "Cyborg_Power", textoComentario: "A história do Cyborg foi a que mais me emocionou, muito bem desenvolvida." },
+    { nomeUsuario: "FilmeDeAcao", textoComentario: "Muita ação e bom drama. O Steppenwolf como vilão é decente." },
+],
+
+princess_mononoke: [
+    { nomeUsuario: "GhibliLover", textoComentario: "Uma obra-prima atemporal. A mensagem sobre ecologia e guerra é profunda." },
+    { nomeUsuario: "HayaoMestre", textoComentario: "Visualmente o filme é um espetáculo. A trilha sonora do Joe Hisaishi é perfeita." },
+    { nomeUsuario: "Ashitaka", textoComentario: "Não há vilões e heróis simples, apenas personagens com motivações complexas. Isso é genial." },
+    { nomeUsuario: "FantasiaÉpica", textoComentario: "A luta entre a humanidade e a natureza selvagem é de tirar o fôlego." },
+    { nomeUsuario: "MelhorAnime", textoComentario: "Um dos filmes mais importantes do Studio Ghibli. Altamente recomendado." },
+],
+
+orange: [
+    { nomeUsuario: "ShoujoFan", textoComentario: "Uma história tocante sobre amizade e depressão. Prepare os lenços!" },
+    { nomeUsuario: "ViagemNoTempo", textoComentario: "A premissa das cartas do futuro é muito bem explorada e dramática." },
+    { nomeUsuario: "GrupoDeAmigos", textoComentario: "O relacionamento dos amigos e o esforço deles para salvar Kakeru é lindo." },
+    { nomeUsuario: "DramaRomance", textoComentario: "Foca bastante no desenvolvimento dos personagens e em como o passado afeta o presente." },
+    { nomeUsuario: "FinalEmocionante", textoComentario: "Um dos animes mais sinceros e realistas sobre arrependimento e esperança." },
+],
+
+o_silencio_dos_inocentes: [
+    { nomeUsuario: "SuspensePsico", textoComentario: "Um dos melhores thrillers psicológicos da história. Hannibal Lecter é icônico." },
+    { nomeUsuario: "AgenteStarling", textoComentario: "Jodie Foster e Anthony Hopkins em atuações brilhantes. A tensão é palpável." },
+    { nomeUsuario: "ClassicoCinema", textoComentario: "Um filme que te prende do início ao fim, sem enrolação. Roteiro impecável." },
+    { nomeUsuario: "SerialKiller", textoComentario: "A dinâmica entre Clarice e Lecter é o cerne do filme. Fascinante e perturbador." },
+    { nomeUsuario: "MelhorFilme", textoComentario: "Vencedor do 'Big Five' no Oscar por um bom motivo. Um filme obrigatório!" },
+],
+
+bastardos_inglorios: [
+    { nomeUsuario: "TarantinoFan", textoComentario: "O diálogo de abertura no celeiro é uma obra-prima. Puro Tarantino." },
+    { nomeUsuario: "CinefiloGuerra", textoComentario: "Uma visão estilizada e audaciosa da Segunda Guerra Mundial. Brad Pitt está hilário." },
+    { nomeUsuario: "ChristophWaltz", textoComentario: "Hans Landa é um dos melhores vilões do cinema. Waltz merece todos os prêmios que ganhou." },
+    { nomeUsuario: "HistoriaAlternativa", textoComentario: "Adorei a forma como a história é reescrita no final. Genial e divertido." },
+    { nomeUsuario: "DialogoDeAcao", textoComentario: "Menos ação, mais tensão em cada palavra. O ritmo é perfeito." },
+],
+
+invocacao_do_mal: [
+    { nomeUsuario: "CasalWarren", textoComentario: "O melhor universo de terror da atualidade. Ed e Lorraine Warren dão credibilidade." },
+    { nomeUsuario: "Assustador", textoComentario: "Sustos bem construídos e uma atmosfera assustadora. A boneca é bizarra!" },
+    { nomeUsuario: "FilmeDeTerror", textoComentario: "O primeiro filme é um clássico moderno. Manteve o terror em alta." },
+    { nomeUsuario: "NoiteDeSustos", textoComentario: "Não dá para assistir sozinho. Recomendo para quem gosta de terror de possessão." },
+    { nomeUsuario: "HistoriaReal", textoComentario: "O fato de ser baseado em fatos reais (supostamente) torna tudo mais tenso." },
+],
+
+invocacao_do_mal_3: [
+    { nomeUsuario: "SequenciaBoa", textoComentario: "Não é tão bom quanto o primeiro, mas mantém o padrão de qualidade do universo." },
+    { nomeUsuario: "NovosAres", textoComentario: "Gostei que eles mudaram o foco da casa mal-assombrada para um julgamento." },
+    { nomeUsuario: "Julgamento", textoComentario: "O caso Arne Cheyenne Johnson é fascinante e foi bem adaptado." },
+    { nomeUsuario: "CineTerror", textoComentario: "Muita ação e um pouco mais de 'thriller' que os anteriores. Bom entretenimento." },
+    { nomeUsuario: "WarrenDeVolta", textoComentario: "Os atores continuam ótimos como Ed e Lorraine. O carisma deles sustenta o filme." },
+],
+naruto_shippuden: [
+    { nomeUsuario: "EremitaDosSeisCaminhos", textoComentario: "O arco do Pain é, sem dúvida, o pico da série. A luta e a filosofia por trás dela são incríveis." },
+    { nomeUsuario: "Time7", textoComentario: "A busca por Sasuke foi o que me manteve preso. É a parte mais emocionante e dramática da jornada." },
+    { nomeUsuario: "MelhorAntagonista", textoComentario: "Itachi e Obito são os verdadeiros gênios do anime. As reviravoltas na história deles são impecáveis." },
+    { nomeUsuario: "ShippudenRaiz", textoComentario: "A trilha sonora evoluiu demais! 'Sadness and Sorrow' na fase Shippuden é de arrepiar." },
+    { nomeUsuario: "AnimeDaGuerra", textoComentario: "A Quarta Guerra Mundial Ninja teve seus altos e baixos, mas trouxe resoluções satisfatórias para quase todos os personagens." },
+],
     naruto: [
         { nomeUsuario: "FãClássico", textoComentario: "Os arcos do Pain e da Guerra são insuperáveis! Sentirei falta desses personagens." },
         { nomeUsuario: "Hokage", textoComentario: "Anime maravilhoso! Shippuden marcou minha adolescência. O desenvolvimento do Naruto é incrível." },
@@ -907,28 +993,14 @@ const COMENTARIOS_POR_FILME = {
 export async function seedComentarios(prisma) {
     console.log("Iniciando o seeding de Comentários...");
 
-    const streamsDb = await prisma.stream.findMany({
-        select: { id: true, nome: true },
-    });
-
-    const streamMap = streamsDb.reduce((map, stream) => {
-        // Esta lógica de slug é a correta:
-        const slug = stream.nome.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/(^_|_$)/g, '');
-        map[slug] = stream.id;
-        return map;
-    }, {});
+    // REMOVA A PARTE DO streamMap se você só precisa dos IDs dos comentários
 
     let comentariosInseridos = 0;
 
-    for (const slug in COMENTARIOS_POR_FILME) {
-        const streamId = streamMap[slug];
-
-        if (!streamId) {
-            console.warn(`[AVISO] Stream com slug '${slug}' não encontrado. Pulando comentários.`);
-            // Isso explica o aviso do "Naruto Shippuden", pois o stream só se chama "Naruto" no BD
-            continue;
-        }
-
+    // Removemos a verificação "if (!streamId)"
+    for (const slug in COMENTARIOS_POR_FILME) { 
+        // Não precisamos mais do streamId para o Comentário, apenas do slug!
+        
         const comentarios = COMENTARIOS_POR_FILME[slug];
         
         for (const comentario of comentarios) {
@@ -936,6 +1008,7 @@ export async function seedComentarios(prisma) {
                 data: {
                     textoComentario: comentario.textoComentario,
                     nomeUsuario: comentario.nomeUsuario,
+                    // O campo idFilmeCard é o slug que vem do seu array
                     idFilmeCard: slug, 
                 },
             });
