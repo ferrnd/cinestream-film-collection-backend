@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import streamRoutes from './src/routes/streamRoutes.js';
 import generoRoutes from './src/routes/generoRoutes.js';
 import comentarioRoutes from './src/routes/comentarioRoutes.js';
@@ -8,6 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const serverPort = process.env.PORT || 3001;
 

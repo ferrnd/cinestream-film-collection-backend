@@ -1,8 +1,30 @@
 import { PrismaClient } from "@prisma/client";
+
 const prisma = new PrismaClient();
 
+import { seedComentarios } from './comentarioSeed.js';
+
+
+
 async function main() {
-    console.log("Seeding database...");
+    console.log("Iniciando a limpeza de dados e o Seeding...");
+
+    // ------------------------------------------------------------------
+    // 💡 PASSO 1: Adicionar a Lógica de Limpeza para evitar o erro P2002
+    // Devemos deletar em ordem inversa à dependência (Comentario -> Stream -> Genero)
+    
+    // Deleta todos os comentários
+    await prisma.comentario.deleteMany(); 
+    
+    // Deleta todos os streams
+    await prisma.stream.deleteMany();
+    
+    // Deleta todos os gêneros (isso resolve o erro P2002)
+    await prisma.genero.deleteMany();
+
+    console.log("Limpeza de dados anteriores concluída com sucesso.");
+    // ------------------------------------------------------------------
+
 
     const generosData = [
         "Terror",
@@ -26,8 +48,6 @@ async function main() {
     }
 
     const streams = [
-
-        // Filmes
 
         { nome: "Django Livre", descricao: "Um escravo liberto busca vingança contra um fazendeiro cruel.", classificacao: "18+", anoLancamento: 2012, genero: "Ação" },
         { nome: "Ilha do Medo", descricao: "Dois agentes federais investigam o desaparecimento de uma paciente em um hospital psiquiátrico isolado.", classificacao: "16+", anoLancamento: 2010, genero: "Suspense" },
@@ -174,10 +194,17 @@ async function main() {
     }
 
     console.log("Database seeded successfully! Total de 120 streams inseridos.");
+
+await seedComentarios(prisma);
+    
+    console.log("Seeding completo.");
 }
 
 main()
-    .catch((e) => console.error(e))
+    .catch((e) => {
+        console.error(e);
+        process.exit(1);
+    })
     .finally(async () => {
         await prisma.$disconnect();
     });

@@ -32,6 +32,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "nodemon": "^3.1.11",
@@ -41,6 +42,6 @@
     "@faker-js/faker": "^10.1.0"
   },
   "prisma": {
-    "seed": "node prisma/seed.js && node prisma/comentarioSeed.js"
+    "seed": "node prisma/seed.js"
   }
 }

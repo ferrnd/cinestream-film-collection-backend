@@ -1,8 +1,37 @@
-import * as comentariosModel from "../models/comentariosModel.js";
+import * as comentariosModel from "../models/comentarioModel.js";
+
+// 💡 FUNÇÃO ADICIONADA: PARA A ROTA GET /comentarios
+export const listarTodos = async (req, res) => {
+    try {
+        // Não precisamos de filtros do req.query, mas mantemos o padrão
+        const comentarios = await comentariosModel.encontreTodos(); 
+
+        if (!comentarios || comentarios.length === 0) {
+            return res.status(404).json({
+                total: 0,
+                message: "No comments found",
+                comentarios: [],
+                status: 404,
+            });
+        }
+
+        res.status(200).json({
+            total: comentarios.length,
+            message: "List of all comments",
+            comentarios,
+            status: 200,
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: "Internal server error",
+            details: error.message,
+            status: 500,
+        });
+    }
+};
 
 export const listarPorFilmeId = async (req, res) => {
     try {
-
         const filmeId = req.params.id;
 
         if (!filmeId) {
@@ -15,6 +44,16 @@ export const listarPorFilmeId = async (req, res) => {
 
         const comentarios = await comentariosModel.encontrePorIdFilme(filmeId); 
 
+        // Adicionando verificação de 404 para ser mais robusto
+        if (!comentarios || comentarios.length === 0) {
+            return res.status(404).json({
+                total: 0,
+                message: `No comments found for film ID: ${filmeId}`,
+                comentarios: [],
+                status: 404,
+            });
+        }
+        
         res.status(200).json({
             total: comentarios.length,
             message: "List of comments found",
@@ -22,6 +61,11 @@ export const listarPorFilmeId = async (req, res) => {
             status: 200,
         });
     } catch (error) {
+        res.status(500).json({
+            error: "Internal server error",
+            details: error.message,
+            status: 500,
+        });
     }
 };
 

@@ -42,7 +42,7 @@ const FILME_IDS = [
 
 const COMENTARIOS_POR_FILME = {
 
-    naruto_shippuden: [
+    naruto: [
         { nomeUsuario: "FãClássico", textoComentario: "Os arcos do Pain e da Guerra são insuperáveis! Sentirei falta desses personagens." },
         { nomeUsuario: "Hokage", textoComentario: "Anime maravilhoso! Shippuden marcou minha adolescência. O desenvolvimento do Naruto é incrível." },
         { nomeUsuario: "Sakura_Sama", textoComentario: "Muita enrolação às vezes, mas as lutas e o peso emocional são nota 10." },
@@ -904,44 +904,44 @@ const COMENTARIOS_POR_FILME = {
     ],
 };
 
+export async function seedComentarios(prisma) {
+    console.log("Iniciando o seeding de Comentários...");
 
-async function main() {
-    console.log(`Iniciando o seeding de ${FILME_IDS.length} filmes...`);
+    const streamsDb = await prisma.stream.findMany({
+        select: { id: true, nome: true },
+    });
 
-    const dadosParaInserir = [];
+    const streamMap = streamsDb.reduce((map, stream) => {
+        // Esta lógica de slug é a correta:
+        const slug = stream.nome.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/(^_|_$)/g, '');
+        map[slug] = stream.id;
+        return map;
+    }, {});
 
-    for (const idFilmeCard of FILME_IDS) {
-        const comentarios = COMENTARIOS_POR_FILME[idFilmeCard] || []; 
+    let comentariosInseridos = 0;
+
+    for (const slug in COMENTARIOS_POR_FILME) {
+        const streamId = streamMap[slug];
+
+        if (!streamId) {
+            console.warn(`[AVISO] Stream com slug '${slug}' não encontrado. Pulando comentários.`);
+            // Isso explica o aviso do "Naruto Shippuden", pois o stream só se chama "Naruto" no BD
+            continue;
+        }
+
+        const comentarios = COMENTARIOS_POR_FILME[slug];
         
-        comentarios.forEach(c => {
-            dadosParaInserir.push({
-                nomeUsuario: c.nomeUsuario,
-                textoComentario: c.textoComentario,
-                idFilmeCard: idFilmeCard, 
+        for (const comentario of comentarios) {
+            await prisma.comentario.create({
+                data: {
+                    textoComentario: comentario.textoComentario,
+                    nomeUsuario: comentario.nomeUsuario,
+                    idFilmeCard: slug, 
+                },
             });
-        });
+            comentariosInseridos++;
+        }
     }
 
-    if (dadosParaInserir.length === 0) {
-        console.log("Nenhum dado de comentário de exemplo encontrado no objeto COMENTARIOS_POR_FILME.");
-        return;
-    }
-
-    await prisma.comentario.deleteMany({});
-    
-    const resultado = await prisma.comentario.createMany({
-        data: dadosParaInserir,
-        skipDuplicates: true, 
-    });
-
-    console.log(`Seeding finalizado. ${resultado.count} comentários inseridos no banco de dados.`);
+    console.log(`Seeding de Comentários concluído! Total de ${comentariosInseridos} comentários inseridos.`);
 }
-
-main()
-    .catch((e) => {
-        console.error("Erro durante o seeding:", e);
-        process.exit(1);
-    })
-    .finally(async () => {
-        await prisma.$disconnect();
-    });
