@@ -11,6 +11,7 @@ model Genero {
   id        Int      @id @default(autoincrement())
   nome      String   @unique
   filmes    stream[]
+  streamDBs StreamDB[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -45,7 +46,10 @@ model Comentario {
 model StreamDB {
   id              Int      @id @default(autoincrement())
   nome            String   @unique
+  generoId        Int?
+  genero          Genero?  @relation(fields: [generoId], references: [id])
   descricao       String
+  elenco          String?
   classificacao   String
   anoLancamento   Int
   cardCapa        String
