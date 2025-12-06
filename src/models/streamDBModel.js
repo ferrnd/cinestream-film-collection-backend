@@ -22,6 +22,7 @@ export const encontreTodos = async (filtros = {}) => {
   return await prisma.streamDB.findMany({ // Usa StreamDB
     where: where,
     orderBy: { id: "asc" },
+        include: { genero: true },
   });
 };
 
@@ -29,6 +30,7 @@ export const encontreTodos = async (filtros = {}) => {
 export const encontreUm = async (id) => {
   return await prisma.streamDB.findUnique({ // Usa StreamDB
     where: { id: Number(id) },
+        include: { genero: true },
   });
 };
 
@@ -45,7 +47,10 @@ export const criar = async (dado) => {
       video: dado.video || null,
       logo: dado.logo || null,
       poster: dado.poster || null,
-      fundo: dado.fundo || null,
+            fundo: dado.fundo || null,
+            // novos campos
+            elenco: dado.elenco || null,
+            generoId: dado.generoId || null,
     },
   });
 };
@@ -72,6 +77,8 @@ export const atualizar = async (id, dado) => {
       ...(dado.logo && { logo: dado.logo }),
       ...(dado.poster && { poster: dado.poster }),
       ...(dado.fundo && { fundo: dado.fundo }),
+            ...(dado.elenco && { elenco: dado.elenco }),
+            ...(dado.generoId && { generoId: dado.generoId }),
     },
   });
 };
