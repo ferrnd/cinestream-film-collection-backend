@@ -232,8 +232,8 @@ const filmesNovos = [
         anoLancamento: 1995,
         cardCapa: "https://m.media-amazon.com/images/S/pv-target-images/15d7693ebd59ea07ffd911bcfd2e30f980e05fd5ba173365546829f02d38d5a4.jpg",
         video: "JQ4W8vK1iSs",
-        logo: "https://static.wikia.nocookie.net/herois-do-multiverso-universo/images/a/a4/The-mask-tc-1-.jpg/revision/latest/scale-to-width-down/1330?cb=20171221112300&path-prefix=pt",
-        poster: "https://static.wikia.nocookie.net/dublagem/images/e/e1/O_m%C3%A1skara_desenho.jpg/revision/latest?cb=20230211141056&path-prefix=pt-br",
+        logo: "https://image.tmdb.org/t/p/original/kq8OuvY9KVnyfwKrcmCnIkNvkPC.png",
+        poster: "https://tse1.mm.bing.net/th/id/OIP.nrHhapmTLfRuoYfeOUiwRQHaLH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
         fundo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Vvm12pQouZ8X3R5UbuIA-caiTxyeXnzK7Q&s",
     },
     {
@@ -255,7 +255,7 @@ const filmesNovos = [
         cardCapa: "https://i.ytimg.com/vi/Cy6I1Jhywhw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAvulAx5xr89T8kRrETGZs7qbXdVg",
         video: "anMUn9d_1Qg",
         logo: "https://cdn.textstudio.com/output/sample/normal/1/1/3/9/johnny-bravo-logo-570-19311.png",
-        poster: "https://static.wikia.nocookie.net/dublagem/images/2/20/Johnny_Bravo_Poster.webp/revision/latest/scale-to-width/360?cb=20250924221020&path-prefix=pt-br",
+        poster: "https://image.tmdb.org/t/p/original/5TUFS5ltG0bNJXJzm8T42KEMriA.jpg",
         fundo: "https://aventurasnahistoria.com.br/wp-content/uploads/bravoamndma.jpg",
     },
     {
@@ -274,8 +274,8 @@ const filmesNovos = [
         "descricao": "Baseado na história real do matemático John Nash. Brilhante, Nash formulou um teorema revolucionário, mas foi diagnosticado com esquizofrenia. O filme acompanha sua luta para distinguir o real do imaginário e ter uma vida normal, sendo eventualmente premiado com o Nobel.",
         "classificacao": "12 Anos",
         "anoLancamento": 2001,
-        "cardCapa": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3J9-ZHgMQP2faOETtg2FmebC4sy0uAtDfXQJjYEC2emh6oCp4KKzokgGUvpVubZyEx3XOdlMcB-a6f3p1VoV04akwbSYzJ1i_WPLM_FIR98nlf7HnVDe09AFnmJ5zMazSiytGXCHTqxz8PnENhRAyak2CC3My4hieS3LsXCstDqlR76BPWBILAYG/s1280/Uma-Mente-Brilhante%20(1).jpeg",
-        "video": "EajIlG_OCvw",
+        "cardCapa": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAh9nA71Dl1qSNrJEoaIa-JXPhPYC0fnehAIUcZM3YZDPOcTehc9pF0bo7VwKfPP8zOypRMEXd9xxaZpkNUNaP0SAkDorbRPwBOgxstfM49tH_oV5FZU3sMOG5tMz9p4Hjcjc3F8Nmqvo1APatvb5f4UUw18YOYw_q-HpKdbxCswcMJ7v3-xC64cJfhw/s1280/Uma-Mente-Brilhante%20(1).jpg",
+        "video": "q8vUMD1f0ss",
         "logo": "https://static.wikia.nocookie.net/logopedia/images/a/ab/A-beautiful-mind-2001.png/revision/latest?cb=20210306005348",
         "poster": "https://m.media-amazon.com/images/S/pv-target-images/744842cd790b7029dce32ee30a205e579e9cebe87a0c80eceeba68365a43a034.jpg",
         "fundo": "https://encenasaudemental.com/wp-content/uploads/2016/01/beautifulmind.jpg"
@@ -508,7 +508,7 @@ const filmesNovos = [
         cardCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc1xC6TurpT-7Pr_uPu5WQowu4JyEwqGh-gMqS5ZeiQmsKghFTsJYzNBeTdZN-FrJjoWNf_Dn1XQjQ1vHBil2zHSOSuq52AShFy6cQYX0xO4B6Az6xf6t84qf9u5l9KBDWHnGwOJAgYugE/w1200-h630-p-k-no-nu/superbad-movie.jpg",
         video: "4eaZ_48ZYog",
         logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Superbad_Logo.png",
-        poster: "https://static.wikia.nocookie.net/dublagem/images/4/4d/Superbad%C3%A9hoje.jpg/revision/latest?cb=20241016191717&path-prefix=pt-br",
+        poster: "https://image.tmdb.org/t/p/original/2pcIeB50XjM8x0V5Wv6r6VAvArM.jpg",
         fundo: "https://rollingstone.com.br/wp-content/uploads/2024/06/por-que-superbad-nunca-tera-uma-continuacao-criadores-respondem-foto-divulgacao.jpg",
     },
     {
@@ -549,7 +549,7 @@ const filmesNovos = [
         descricao: "Harry Potter é um garoto órfão que vive infeliz com seus tios. Aos 11 anos, ele recebe um convite para ingressar na Escola de Magia e Bruxaria de Hogwarts, descobrindo um mundo mágico que jamais imaginara. Ao lado de seus novos amigos, Rony e Hermione, ele se aventura para desvendar o mistério que cerca a lendária Pedra Filosofal.",
         classificacao: "Livre",
         anoLancamento: 2001,
-        cardCapa: "https://www.avmakers.com.br/blog/10-curiosidades-sobre-a-producao-de-harry-potter-e-a-pedra-filosofal",
+        cardCapa: "https://image.tmdb.org/t/p/w780/7Hyl3IiKsaskhBnbkBU9jpAj57F.jpg",
         video: "SFzft_2dcV0",
         logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvKAb1ke8t3bH90m1oRSHsFQdb5kr0lbIXPOq0BJnAh19saOkyy_YbGTndSq-C_anNUGsLK7tWqyIHrwnrwEUGtXQ_Yzj2BjOWBZX4__DV2-uOiwkqPk9aJbuifjlbF2OLhz-NNBahskc/s1600/Harry+Potter+e+a+Pedra+Filosofal+Logo.jpg",
         poster: "https://i.pinimg.com/736x/16/fc/ef/16fcefb7a6af4c45e13020ab4ebfe344.jpg",
@@ -560,10 +560,10 @@ const filmesNovos = [
         descricao: "Em seu segundo ano na Escola de Magia e Bruxaria de Hogwarts, Harry Potter é alvo de avisos sinistros. Após seu retorno, eventos misteriosos começam a petrificar alunos e pessoas se transformam em pedra. Harry, Rony e Hermione precisam investigar o temido segredo da Câmara Secreta antes que seja tarde demais.",
         classificacao: "10 anos",
         anoLancamento: 2002,
-        cardCapa: "https://radiomixfm.com.br/wp-content/uploads/2022/11/harry-potter-e-a-camara-secreta-volta-aos-cinemas-foto-1024x384.jpg",
+        cardCapa: "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/a9/a6/22/a9a622ae-964d-0039-eb8e-5e5ad3b5f8fe/HP2_H_DD_KA_TT_3840x2160_300dpi_MX.lsr/1200x675.jpg",
         video: "7ZBh_-Aa0Bk",
         logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGwFJJaoPBFJVOUPoA_GZeQ2bO5DJCdoX8IRpouitOAATRxYhC-AdHL0yQzts2LNC8gHEZg3Xt_DpPMZlSdRnh4j0ZjwAPnutloI7dT2eHjSHSFnWu3O4qHpgZcdwbSOaeLmn4H713DMs/s1600/Harry+Potter+e+a+C%25C3%25A2mara+Secreta.jpg",
-        poster: "https://www.imdb.com/pt/title/tt0295297/mediaviewer/rm287068673/?ref_=tt_ov_i",
+        poster: "https://cinemaweb.com.br/wp-content/uploads/2024/06/poster-harry-potter-e-a-camara-secreta-2002.jpg?x55736",
         fundo: "https://m.media-amazon.com/images/S/pv-target-images/86c2df4655613678a150efbf3e13ed4bdfbe17e5f0e006d3a75d09bdf8f7b29b._SX1080_FMjpg_.jpg",
     },
     {
@@ -585,7 +585,7 @@ const filmesNovos = [
         cardCapa: "https://vipzinho.com.br/wp-content/uploads/2025/08/harry-potter-e-o-calice-de-fogo.jpeg",
         video: "RwJlOdtoHRE",
         logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8YXn9YVnaF5jXBlahnt2ys82ORw9chuVwnryRshCMyhC2EvtxYPpEXLtiXbA_ow25dlYOdca3RlJ2MHHn2-CljKhuu_F1lrcqwuT24JmrHKUSI7g9hMlZtsYx0GCqFQuupmNWXgc33wY/s1600/Harry+Potter+e+o+C%25C3%25A1lice+de+Fogo+Logo.jpg",
-        poster: "https://img.elo7.com.br/product/zoom/265774E/big-poster-harry-potter-e-o-calice-de-fogo-lo02-90x60-cm-geek.jp",
+        poster: "https://tse1.mm.bing.net/th/id/OIP.fACCt5k_DU1rx9XeCo1xgAHaKk?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
         fundo: "https://media.themoviedb.org/t/p/w500_and_h282_face/8f9dnOtpArDrOMEylpSN9Sc6fuz.jpg",
     },
     {
@@ -1118,14 +1118,514 @@ export async function seedStreamDB(prisma) {
 
     console.log(`Iniciando o Seeding de ${filmesNovos.length} novos filmes...`);
 
+    // carregar gêneros existentes para vincular por nome
+    const generos = await client.genero.findMany();
+    const normalize = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^a-z0-9 ]+/g, '').trim();
+    const generoMap = {};
+    generos.forEach(g => generoMap[normalize(g.nome)] = g.id);
+
+    // OVERRIDES: coloque aqui mapeamentos manuais caso queira garantir elenco ou genero específico
+    // Chave: slug (nome normalizado). Exemplo: 'your_name'
+    const ELENCO_OVERRIDES = {
+'Harry Potter e a Pedra Filosofal': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e a Câmara Secreta': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e o Prisioneiro de Azkaban': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e o Cálice de Fogo': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e a Ordem da Fênix': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e o Enigma do Príncipe': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e as Relíquias da Morte: Parte 1': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'Harry Potter e as Relíquias da Morte: Parte 2': 'Daniel Radcliffe, Rupert Grint, Emma Watson',
+
+'O Vingador do Futuro (Total Recall - 1990)': 'Arnold Schwarzenegger, Sharon Stone, Rachel Ticotin',
+
+'Star Trek (2009)': 'Chris Pine, Zachary Quinto, Leonard Nimoy',
+
+'O Jogo de Ender': 'Asa Butterfield, Harrison Ford, Hailee Steinfeld',
+
+'Minority Report': 'Tom Cruise, Colin Farrell, Samantha Morton',
+
+'O Quinto Elemento': 'Bruce Willis, Gary Oldman, Milla Jovovich',
+
+'300': 'Gerard Butler, Lena Headey, David Wenham',
+
+'Kingsman: Serviço Secreto': 'Colin Firth, Taron Egerton, Samuel L. Jackson',
+
+'Sicario: Terra de Ninguém': 'Emily Blunt, Benicio del Toro, Josh Brolin',
+
+'Fúria em Alto Mar (Under Siege)': 'Steven Seagal, Tommy Lee Jones, Gary Busey',
+
+'Velocidade Máxima (Speed)': 'Keanu Reeves, Dennis Hopper, Sandra Bullock',
+
+'A Cor Púrpura': 'Whoopi Goldberg, Oprah Winfrey, Danny Glover',
+
+'O Menino do Pijama Listrado': 'Asa Butterfield, Jack Scanlon, David Thewlis',
+
+'Lion: Uma Jornada para Casa': 'Dev Patel, Nicole Kidman, Rooney Mara',
+
+'A Teoria de Tudo': 'Eddie Redmayne, Felicity Jones, Charlie Cox',
+
+'O Pianista': 'Adrien Brody, Thomas Kretschmann, Frank Finlay',
+
+'Prenda-me Se For Capaz': 'Leonardo DiCaprio, Tom Hanks, Christopher Walken',
+
+'O Segredo dos Seus Olhos': 'Ricardo Darín, Soledad Villamil, Guillermo Francella',
+
+'Uma Mente Brilhante': 'Russell Crowe, Ed Harris, Jennifer Connelly',
+
+'Na Natureza Selvagem': 'Emile Hirsch, Marcia Gay Harden, William Hurt',
+
+'O Artista': 'Jean Dujardin, Bérénice Bejo, John Goodman',
+
+'Seven: Os Sete Crimes Capitais': 'Brad Pitt, Morgan Freeman, Gwyneth Paltrow',
+
+'O Suspeito (Prisoners)': 'Hugh Jackman, Jake Gyllenhaal, Viola Davis',
+
+'O Grande Truque (The Prestige)': 'Hugh Jackman, Christian Bale, Michael Caine',
+
+'A Garota com a Tatuagem de Dragão': 'Daniel Craig, Rooney Mara, Christopher Plummer',
+
+'Los Angeles: Cidade Proibida (L.A. Confidential)': 'Kevin Spacey, Russell Crowe, Guy Pearce',
+
+'Instinto Selvagem': 'Michael Douglas, Sharon Stone, George Dzundza',
+
+'O Fugitivo': 'Harrison Ford, Tommy Lee Jones, Sela Ward',
+
+'O Poderoso Chefão II': 'Al Pacino, Robert De Niro, Robert Duvall',
+
+'O Poderoso Chefão III': 'Al Pacino, Diane Keaton, Andy Garcia',
+
+'A Fuga das Galinhas': 'Julia Sawalha, Mel Gibson, Tony Haygarth',
+
+'Toy Story (1995)': 'Tom Hanks, Tim Allen, Don Rickles',
+
+'Zootopia': 'Ginnifer Goodwin, Jason Bateman, Idris Elba',
+
+'Valente': 'Kelly Macdonald, Billy Connolly, Emma Thompson',
+
+'Monstros S.A.': 'John Goodman, Billy Crystal, Mary Gibbs',
+
+'Meu Malvado Favorito': 'Steve Carell, Jason Segel, Russell Brand',
+
+'Ace Ventura: Um Detetive Diferente': 'Jim Carrey, Courteney Cox, Sean Young',
+
+'Quem Vai Ficar Com Mary?': 'Cameron Diaz, Ben Stiller, Matt Dillon',
+
+'Escola de Rock': 'Jack Black, Joan Cusack, Mike White',
+
+'Superbad: É Hoje': 'Jonah Hill, Michael Cera, Christopher Mintz-Plasse',
+
+'Todo Mundo Quase Morto (Shaun of the Dead)': 'Simon Pegg, Kate Ashfield, Nick Frost',
+
+'O Exorcista': 'Ellen Burstyn, Max von Sydow, Linda Blair',
+
+'Alien, O Oitavo Passageiro': 'Sigourney Weaver, Tom Skerritt, Veronica Cartwright',
+
+'O Chamado (The Ring)': 'Naomi Watts, Martin Henderson, David Dorfman',
+
+'O Iluminado (The Shining)': 'Jack Nicholson, Shelley Duvall, Danny Lloyd',
+
+'Corrente do Mal (It Follows)': 'Maika Monroe, Keir Gilchrist, Olivia Luccardi',
+
+'A Entidade (Sinister)': 'Ethan Hawke, Juliet Rylance, James Ransone',
+
+'A Vila (The Village)': 'Bryce Dallas Howard, Joaquin Phoenix, Adrien Brody',
+
+'A Noite dos Mortos-Vivos (1968)': 'Duane Jones, Judith O Dea Karl Hardman',
+
+'Demon Slayer: Mugen Train (Filme)': 'Natsuki Hanae, Akari Kitō, Hiro Shimono',
+
+'Your Name. (Filme - Kimi no Na Wa)': 'Ryunosuke Kamiki, Mone Kamishiraishi, Ryo Narita',
+
+'A Voz do Silêncio (Filme - A Silent Voice)': 'Miyu Irino, Saori Hayami, Aoi Yūki',
+'The Sopranos': 'James Gandolfini, Lorraine Bracco, Edie Falco',
+
+'Succession': 'Brian Cox, Jeremy Strong, Sarah Snook',
+
+'Fargo': 'Billy Bob Thornton, Martin Freeman, Allison Tolman',
+
+'The Good Place': 'Kristen Bell, Ted Danson, William Jackson Harper',
+
+'Fleabag': 'Phoebe Waller-Bridge, Sian Clifford, Olivia Colman',
+
+'Yellowstone': 'Kevin Costner, Luke Grimes, Kelly Reilly',
+
+'Severance': 'Adam Scott, Zach Cherry, Britt Lower',
+
+'Only Murders in the Building': 'Steve Martin, Martin Short, Selena Gomez',
+
+'This Is Us': 'Milo Ventimiglia, Mandy Moore, Sterling K. Brown',
+
+'Mindhunter': 'Jonathan Groff, Holt McCallany, Anna Torv',
+
+'Big Little Lies': 'Reese Witherspoon, Nicole Kidman, Shailene Woodley',
+
+'The Umbrella Academy': 'Elliot Page, Tom Hopper, David Castañeda',
+
+'Homeland': 'Claire Danes, Mandy Patinkin, Damian Lewis',
+
+'Oz (Série HBO)': 'Ernie Hudson, Terry Kinney, Harold Perrineau',
+
+'Billions': 'Paul Giamatti, Damian Lewis, Maggie Siff',
+
+'The Handmaid s Tale': 'Elisabeth Moss, Yvonne Strahovski, Ann Dowd',
+
+'The Mandalorian': 'Pedro Pascal, Gina Carano, Giancarlo Esposito',
+
+'Reservation Dogs': 'Devery Jacobs, D Pharaoh Woon-A-Tai, Lane Factor',
+
+'Better Call Saul': 'Bob Odenkirk, Jonathan Banks, Rhea Seehorn',
+
+'Grey s Anatomy': 'Ellen Pompeo, Patrick Dempsey, Sandra Oh',
+
+'Seinfeld': 'Jerry Seinfeld, Julia Louis-Dreyfus, Michael Richards',
+
+'Parks and Recreation': 'Amy Poehler, Aziz Ansari, Nick Offerman',
+
+'It: A Coisa - Bem-Vindos a Derry (Série)': 'Jovan Adepo, Chris Chalk, Taylour Paige',
+
+'O Senhor dos Anéis: Os Anéis de Poder (Série)': 'Morfydd Clark, Robert Aramayo, Ismael Cruz Córdova',
+
+'Fallout (Série - 2024)': 'Ella Purnell, Aaron Moten, Walton Goggins',
+
+'Erased (Série - Boku dake ga Inai Machi)': 'Shinnosuke Mitsushima, Aoi Yuuki, Takuma Nagatsuka',
+
+'Jojo s Bizarre Adventure': 'Takehito Koyasu, Daisuke Ono, Yuichi Nakamura',
+
+'Kino s Journey (Série - Kino no Tabi)': 'Ai Maeda, Ryuji Aigase',
+
+'Made in Abyss (Série)': 'Miyu Tomita, Mariya Ise, Shiori Izawa',
+
+'Baccano! (Série)': 'Daisuke Sakaguchi, Masaya Onosaka, Sanae Kobayashi',
+
+'Psycho-Pass': 'Kana Hanazawa, Tomokazu Seki, Kenji Nojima',
+
+'Terror in Resonance (Série - Zankyou no Terror)': 'Kaito Ishikawa, Soma Saito, Atsumi Tanezaki',
+
+'Avatar: A Lenda de Aang': 'Zach Tyler Eisen, Mae Whitman, Jack DeSena',
+
+'She-Ra e as Princesas do Poder (2018)': 'Aimee Carrero, Karen Fukuhara, AJ Michalka',
+
+'Castlevania (Anime/Série Animada)': 'Richard Armitage, James Callis, Graham McTavish',
+
+'Bob s Burgers': 'H. Jon Benjamin, Dan Mintz, Eugene Mirman',
+
+'Futurama': 'Billy West, Katey Sagal, John DiMaggio',
+
+'O Máskara: A Série Animada': 'Rob Paulsen, Jim Cummings, Tress MacNeille',
+
+'A Vaca e o Frango': 'Charlie Adler, Candi Milo, Dee Bradley Baker',
+
+'Johnny Bravo': 'Jeff Bennett, Brenda Vaccaro, Mae Whitman',
+
+'As Aventuras de Tintim (Série Animada)': 'Colin O Meara, Thierry Wermuth, Susan Roman',
+    };
+    // Normalizar chaves das overrides para usar slugs (para lookup por slugData)
+    const ELENCO_OVERRIDES_N = {};
+    for (const k in ELENCO_OVERRIDES) {
+        ELENCO_OVERRIDES_N[normalize(k)] = ELENCO_OVERRIDES[k];
+    }
+    const GENERO_OVERRIDES = {
+     'Harry Potter e a Pedra Filosofal': 'Fantasia, Aventura',
+
+'Harry Potter e a Câmara Secreta': 'Fantasia, Aventura',
+
+'Harry Potter e o Prisioneiro de Azkaban': 'Fantasia, Aventura, Mistério',
+
+'Harry Potter e o Cálice de Fogo': 'Fantasia, Aventura, Mistério',
+
+'Harry Potter e a Ordem da Fênix': 'Fantasia, Aventura',
+
+'Harry Potter e o Enigma do Príncipe': 'Fantasia, Aventura, Mistério',
+
+'Harry Potter e as Relíquias da Morte: Parte 1': 'Fantasia, Aventura',
+
+'Harry Potter e as Relíquias da Morte: Parte 2': 'Fantasia, Aventura',
+
+'O Vingador do Futuro (Total Recall - 1990)': 'Ficção Científica, Ação, Aventura',
+
+'Star Trek (2009)': 'Ficção Científica, Ação, Aventura',
+
+'O Jogo de Ender': 'Ficção Científica, Ação, Drama',
+
+'Minority Report': 'Ficção Científica, Ação, Mistério',
+
+'O Quinto Elemento': 'Ficção Científica, Ação, Aventura',
+
+'300': 'Ação, Drama, Fantasia',
+
+'Kingsman: Serviço Secreto': 'Ação, Comédia, Aventura',
+
+'Sicario: Terra de Ninguém': 'Ação, Suspense, Drama',
+
+'Fúria em Alto Mar (Under Siege)': 'Ação, Suspense',
+
+'Velocidade Máxima (Speed)': 'Ação, Suspense, Aventura',
+
+'A Cor Púrpura': 'Drama',
+
+'O Menino do Pijama Listrado': 'Drama',
+
+'Lion: Uma Jornada para Casa': 'Drama',
+
+'A Teoria de Tudo': 'Drama, Romance',
+
+'O Pianista': 'Drama',
+
+'Prenda-me Se For Capaz': 'Drama, Mistério',
+
+'O Segredo dos Seus Olhos': 'Mistério, Suspense, Drama',
+
+'Uma Mente Brilhante': 'Drama, Romance',
+
+'Na Natureza Selvagem': 'Aventura, Drama',
+
+'O Artista': 'Romance, Comédia, Drama',
+
+'Seven: Os Sete Crimes Capitais': 'Mistério, Suspense, Drama',
+
+'O Suspeito (Prisoners)': 'Suspense, Mistério, Drama',
+
+'O Grande Truque (The Prestige)': 'Mistério, Suspense, Drama',
+
+'A Garota com a Tatuagem de Dragão': 'Suspense, Mistério, Drama',
+
+'Los Angeles: Cidade Proibida (L.A. Confidential)': 'Suspense, Mistério, Drama',
+
+'Instinto Selvagem': 'Suspense, Mistério',
+
+'O Fugitivo': 'Ação, Suspense, Drama',
+
+'O Poderoso Chefão II': 'Drama, Suspense',
+
+'O Poderoso Chefão III': 'Drama, Suspense',
+
+'A Fuga das Galinhas': 'Animação, Comédia, Aventura',
+
+'Toy Story (1995)': 'Animação, Comédia, Aventura',
+
+'Zootopia': 'Animação, Comédia, Mistério',
+
+'Valente': 'Animação, Aventura, Fantasia',
+
+'Monstros S.A.': 'Animação, Comédia, Aventura',
+
+'Meu Malvado Favorito': 'Animação, Comédia, Aventura',
+
+'Ace Ventura: Um Detetive Diferente': 'Comédia',
+
+'Quem Vai Ficar Com Mary?': 'Comédia, Romance',
+
+'Escola de Rock': 'Comédia',
+
+'Superbad: É Hoje': 'Comédia',
+
+'Todo Mundo Quase Morto (Shaun of the Dead)': 'Terror, Comédia, Ação',
+
+'O Exorcista': 'Terror, Suspense',
+
+'Alien, O Oitavo Passageiro': 'Ficção Científica, Terror, Suspense',
+
+'O Chamado (The Ring)': 'Terror, Mistério',
+
+'O Iluminado (The Shining)': 'Terror, Drama',
+
+'Corrente do Mal (It Follows)': 'Terror, Mistério',
+
+'A Entidade (Sinister)': 'Terror, Mistério',
+
+'A Vila (The Village)': 'Mistério, Drama, Suspense',
+
+'A Noite dos Mortos-Vivos (1968)': 'Terror, Drama',
+
+'Demon Slayer: Mugen Train (Filme)': 'Animação, Ação, Fantasia',
+
+'Your Name. (Filme - Kimi no Na Wa)': 'Animação, Romance, Drama',
+
+'A Voz do Silêncio (Filme - A Silent Voice)': 'Animação, Drama, Romance',
+'The Sopranos': 'Drama',
+
+'Succession': 'Drama',
+
+'Fargo': 'Suspense, Drama, Comédia',
+
+'The Good Place': 'Comédia, Fantasia',
+
+'Fleabag': 'Comédia, Drama',
+
+'Yellowstone': 'Drama',
+
+'Severance': 'Ficção Científica, Drama, Suspense',
+
+'Only Murders in the Building': 'Comédia, Mistério',
+
+'This Is Us': 'Drama, Romance',
+
+'Mindhunter': 'Suspense, Drama',
+
+'Big Little Lies': 'Drama, Mistério, Suspense',
+
+'The Umbrella Academy': 'Ação, Aventura, Fantasia',
+
+'Homeland': 'Drama, Suspense',
+
+'Oz (Série HBO)': 'Drama, Suspense',
+
+'Billions': 'Drama',
+
+'The Handmaid s Tale': 'Ficção Científica, Drama',
+
+'The Mandalorian': 'Ficção Científica, Ação, Aventura',
+
+'Reservation Dogs': 'Comédia, Drama',
+
+'Better Call Saul': 'Drama, Suspense',
+
+'Grey s Anatomy': 'Drama, Romance',
+
+'Seinfeld': 'Comédia',
+
+'Parks and Recreation': 'Comédia',
+
+'It: A Coisa - Bem-Vindos a Derry (Série)': 'Terror, Mistério, Suspense',
+
+'O Senhor dos Anéis: Os Anéis de Poder (Série)': 'Fantasia, Aventura, Drama',
+
+'Fallout (Série - 2024)': 'Ficção Científica, Ação, Aventura',
+
+'Erased (Série - Boku dake ga Inai Machi)': 'Animação, Mistério, Suspense',
+
+'Jojo s Bizarre Adventure': 'Animação, Ação, Aventura, Fantasia',
+
+'Kino s Journey (Série - Kino no Tabi)': 'Animação, Aventura, Fantasia',
+
+'Made in Abyss (Série)': 'Animação, Aventura, Fantasia',
+
+'Baccano! (Série)': 'Animação, Ação, Mistério, Fantasia',
+
+'Psycho-Pass': 'Animação, Ficção Científica, Ação',
+
+'Terror in Resonance (Série - Zankyou no Terror)': 'Animação, Suspense, Drama',
+
+'Avatar: A Lenda de Aang': 'Animação, Aventura, Fantasia',
+
+'She-Ra e as Princesas do Poder (2018)': 'Animação, Aventura, Fantasia',
+
+'Castlevania (Anime/Série Animada)': 'Animação, Ação, Fantasia',
+
+'Bob s Burgers': 'Animação, Comédia',
+
+'Futurama': 'Animação, Comédia, Ficção Científica',
+
+'O Máskara: A Série Animada': 'Animação, Comédia, Fantasia',
+
+'A Vaca e o Frango': 'Animação, Comédia',
+
+'Johnny Bravo': 'Animação, Comédia',
+
+'As Aventuras de Tintim (Série Animada)': 'Animação, Aventura, Mistério',
+    };
+
+    // normalizar GENERO_OVERRIDES após a declaração
+    const GENERO_OVERRIDES_N = {};
+    for (const k in GENERO_OVERRIDES) {
+        GENERO_OVERRIDES_N[normalize(k)] = GENERO_OVERRIDES[k];
+    }
+
+    // listas simples para gerar elenco sem dependência do faker
+    const FIRST = ['Ana','Bruno','Carlos','Daniela','Eduardo','Fernanda','Guilherme','Helena','Igor','Julia','Lucas','Mariana','Nathalia','Otavio','Paula','Rafael','Sofia','Thiago','Vitoria','Wagner'];
+    const LAST = ['Silva','Souza','Oliveira','Costa','Pereira','Rodrigues','Alves','Ferreira','Gomes','Martins','Rocha','Lima','Carvalho','Ramos','Moreira'];
+    const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
     for (const data of filmesNovos) {
-        if (data.nome) {
-            await client.streamDB.upsert({
-                where: { nome: data.nome },
-                update: data,
-                create: data,
-            });
+        if (!data.nome) continue;
+
+        // tentar detectar gênero por palavras na descrição/nome/classificacao
+        let matchedGeneroId = null;
+        const textForMatch = normalize(`${data.nome} ${data.descricao || ''} ${data.classificacao || ''}`);
+        for (const gnome in generoMap) {
+            if (textForMatch.includes(gnome) || (data.classificacao && normalize(data.classificacao).includes(gnome))) {
+                matchedGeneroId = generoMap[gnome];
+                break;
+            }
         }
+        // se não encontrou, tenta por palavras chaves simples (fallback)
+        if (!matchedGeneroId) {
+            const keywordMap = {
+                'Terror': ['terror','assomb','horror','susto','demon'],
+                'Animação': ['anime','anima','ghibli','cartoon','animation','pikachu','pokemon'],
+                'Ação': ['ação','guerra','batalha','luta','aventura','ação e aventura','superheroi','vingador','gladiador'],
+                'Drama': ['drama','emocion','romance','história','historia','vida'],
+                'Suspense': ['suspense','mistério','misterio','thriller','crime','serial'],
+                'Ficção Científica': ['ficção','ficcao','science','espacial','nolan','interestelar','matrix']
+            };
+            for (const [gname, keys] of Object.entries(keywordMap)) {
+                for (const k of keys) {
+                    if (textForMatch.includes(k)) {
+                        const keynorm = normalize(gname);
+                        if (generoMap[keynorm]) matchedGeneroId = generoMap[keynorm];
+                        break;
+                    }
+                }
+                if (matchedGeneroId) break;
+            }
+        }
+
+        // aplicar override de elenco se o slug estiver presente
+        const slugData = normalize(data.nome);
+        if (ELENCO_OVERRIDES_N[slugData]) {
+            data.elenco = ELENCO_OVERRIDES_N[slugData];
+        }
+
+        // aplicar override de genero (nome do genero) se existir
+        if (GENERO_OVERRIDES_N[slugData]) {
+            // valor pode conter múltiplos gêneros separados por vírgula; verificar cada um
+            const overrideVal = String(GENERO_OVERRIDES_N[slugData] || '');
+            const candidates = overrideVal.split(',').map(s => normalize(s));
+            for (const cand of candidates) {
+                if (!cand) continue;
+                if (generoMap[cand]) {
+                    matchedGeneroId = generoMap[cand];
+                    break;
+                }
+            }
+        }
+
+        // montar elenco simples como string "Nome Sobrenome, Nome Sobrenome, ..."
+        if (!data.elenco) {
+            const castCount = Math.min(5, Math.max(2, Math.floor(Math.random() * 4) + 2));
+            const cast = [];
+            for (let i = 0; i < castCount; i++) {
+                cast.push(`${pick(FIRST)} ${pick(LAST)}`);
+            }
+            data.elenco = cast.join(', ');
+        }
+
+        // enriquecer descrição com uma frase adicional para maior detalhe
+        if (data.descricao && data.descricao.length < 500) {
+            const extras = [
+                'A produção se destaca pela atmosfera e direção de arte, criando cenas memoráveis.',
+                'O roteiro apresenta reviravoltas que mantêm a tensão e aprofundam os personagens.',
+                'A trilha sonora complementa o tom do filme, reforçando momentos emocionantes.',
+                'As atuações são convincentes e trazem profundidade aos conflitos centrais.'
+            ];
+            data.descricao = `${data.descricao} ${pick(extras)}`;
+        }
+
+        // associar generoId se encontrado
+        if (matchedGeneroId) data.generoId = matchedGeneroId;
+
+        await client.streamDB.upsert({
+            where: { nome: data.nome },
+            update: data,
+            create: data,
+        });
     }
 
     console.log(`🎬 Seeding concluído. Total de ${filmesNovos.length} entradas inseridas/atualizadas.`);
