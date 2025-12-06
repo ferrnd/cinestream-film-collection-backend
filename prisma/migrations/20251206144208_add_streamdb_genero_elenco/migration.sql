@@ -1,0 +1,4 @@
+ALTER TABLE "StreamDB" ADD COLUMN     "elenco" TEXT,
+ADD COLUMN     "generoId" INTEGER;
+
+ALTER TABLE "StreamDB" ADD CONSTRAINT "StreamDB_generoId_fkey" FOREIGN KEY ("generoId") REFERENCES "Gêneros"("id") ON DELETE SET NULL ON UPDATE CASCADE;
