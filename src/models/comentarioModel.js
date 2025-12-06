@@ -28,3 +28,9 @@ export const criarComentario = async (dado) => {
     },
   });
 };
+
+export const deleteComentarioById = async (id) => {
+  const parsed = Number(id);
+  if (Number.isNaN(parsed)) return { count: 0 };
+  return await prisma.comentario.deleteMany({ where: { id: parsed } });
+};
