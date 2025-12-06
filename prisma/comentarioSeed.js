@@ -1,6 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+import { faker } from '@faker-js/faker';
 
-const prisma = new PrismaClient();
+// Usa o `prisma` passado pela função `seedComentarios(prisma)`
 
 const FILME_IDS = [
     "naruto_shippuden", "django_livre", "gladiador", "frozen", 
@@ -997,22 +997,121 @@ export async function seedComentarios(prisma) {
 
     let comentariosInseridos = 0;
 
-    // Removemos a verificação "if (!streamId)"
-    for (const slug in COMENTARIOS_POR_FILME) { 
-        // Não precisamos mais do streamId para o Comentário, apenas do slug!
-        
+    // 1) Mapear streams existentes por slug normalizado
+    const streams = await prisma.streamDB.findMany();
+    const slugToStreamId = {};
+
+    const normalize = (s) =>
+        s
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/\p{Diacritic}/gu, '')
+            .replace(/[^a-z0-9 ]+/g, '')
+            .trim()
+            .replace(/\s+/g, '_');
+
+    for (const stream of streams) {
+        const nameClean = stream.nome.replace(/\(.*?\)/g, '').trim();
+        const slug = normalize(nameClean);
+        slugToStreamId[slug] = stream.id;
+    }
+
+    // 2) Inserir comentários definidos em `COMENTARIOS_POR_FILME` atribuídos ao stream correspondente quando possível
+    for (const slug in COMENTARIOS_POR_FILME) {
         const comentarios = COMENTARIOS_POR_FILME[slug];
-        
+        const streamId = slugToStreamId[slug];
+        const idFilmeCard = streamId ? String(streamId) : slug; // fallback para compatibilidade
+
         for (const comentario of comentarios) {
             await prisma.comentario.create({
                 data: {
                     textoComentario: comentario.textoComentario,
                     nomeUsuario: comentario.nomeUsuario,
-                    // O campo idFilmeCard é o slug que vem do seu array
-                    idFilmeCard: slug, 
+                    idFilmeCard,
                 },
             });
             comentariosInseridos++;
+        }
+    }
+
+    // 3) Garantir que cada StreamDB tenha pelo menos 5 comentários, gerando textos/nomes realistas com faker quando necessário
+    for (const stream of streams) {
+        const key = String(stream.id);
+        const existente = await prisma.comentario.count({ where: { idFilmeCard: key } });
+        const faltam = Math.max(0, 5 - existente);
+        if (faltam > 0) {
+            const novos = [];
+            for (let i = 0; i < faltam; i++) {
+                const nameClean = stream.nome.replace(/\(.*?\)/g, '').trim();
+                const slug = normalize(nameClean);
+                const predefined = COMENTARIOS_POR_FILME[slug] || [];
+
+                // Templates em português para comentários gerados
+                const TEMPLATES = [
+                    '{title} é incrível! A história é {adj} e prende do início ao fim.',
+                    'Assisti {title} e fiquei impressionado com {aspect}.',
+                    'Recomendo {title} — é {adj} e muito envolvente.',
+                    'A trilha sonora de {title} combina perfeitamente com as cenas.',
+                    'Não curti tanto {title}, achei {negAdj}.',
+                    'Os personagens de {title} são muito bem construídos. Destaque para as atuações.'
+                ];
+
+                const ADJECTIVES = ['emocionante','envolvente','tenso','lindo','maravilhoso','impactante','sutil','intenso','comovente','divertido','inovador','memorável','perturbador'];
+                const NEG_ADJECTIVES = ['fraco','arrastado','confuso','previsível','superficial','desconexo'];
+                const ASPECTS = ['a cinematografia','a atuação','a narrativa','a trilha sonora','os efeitos visuais','o roteiro','a direção','o desenvolvimento dos personagens'];
+
+                // gerar texto de comentário usando templates
+                const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+                const template = pick(TEMPLATES);
+                const adj = pick(ADJECTIVES);
+                const negAdj = pick(NEG_ADJECTIVES);
+                const aspect = pick(ASPECTS);
+                const fallbackText = template
+                    .replace('{title}', nameClean)
+                    .replace('{adj}', adj)
+                    .replace('{negAdj}', negAdj)
+                    .replace('{aspect}', aspect);
+
+                // gerar username mais natural
+                let fallbackUser = '';
+                if (faker) {
+                    try {
+                        if (faker.internet && typeof faker.internet.userName === 'function') {
+                            fallbackUser = faker.internet.userName();
+                        } else if (faker.person && typeof faker.person.firstName === 'function') {
+                            const first = String(faker.person.firstName()).toLowerCase().replace(/[^a-z0-9]/g, '');
+                            const last = (typeof faker.person.lastName === 'function') ? String(faker.person.lastName()).toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+                            const num = Math.floor(Math.random() * 900) + 100;
+                            fallbackUser = last ? `${first}_${last.charAt(0)}${num}` : `${first}${num}`;
+                        } else if (faker.name && typeof faker.name.firstName === 'function') {
+                            const first = String(faker.name.firstName()).toLowerCase().replace(/[^a-z0-9]/g, '');
+                            fallbackUser = `${first}${Math.floor(Math.random() * 900) + 100}`;
+                        } else {
+                            fallbackUser = `cinefan${Math.floor(Math.random() * 90000) + 10000}`;
+                        }
+                    } catch (e) {
+                        fallbackUser = `cinefan${Math.floor(Math.random() * 90000) + 10000}`;
+                    }
+                } else {
+                    fallbackUser = `cinefan${Math.floor(Math.random() * 90000) + 10000}`;
+                }
+
+                if (predefined[i]) {
+                    novos.push({
+                        idFilmeCard: key,
+                        nomeUsuario: predefined[i].nomeUsuario,
+                        textoComentario: predefined[i].textoComentario,
+                    });
+                } else {
+                    novos.push({
+                        idFilmeCard: key,
+                        nomeUsuario: fallbackUser,
+                        textoComentario: fallbackText,
+                    });
+                }
+            }
+            await prisma.comentario.createMany({ data: novos });
+            comentariosInseridos += novos.length;
         }
     }
 
