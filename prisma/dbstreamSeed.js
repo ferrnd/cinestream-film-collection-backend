@@ -288,7 +288,7 @@ const filmesNovos = [
         "cardCapa": "https://mrbytesolutions.com/djangoapp_pvsm/uploads/posts/post_726_cover.png",
         "video": "0TVBnfniq-8",
         "logo": "https://gateway.prd.sky.ch/imageapi/fiction/logo?param=%7B%22movId%22%3A21942%2C%22format%22%3A%22webp%22%2C%22size%22%3A%22400x400%22%2C%22device%22%3A%22web%22%2C%22language%22%3A%22en%22%7D",
-        "poster": "https://media.fstatic.com/Kyi67kqX1XoKzOok0T8FMPuLs2M=/350x525/smart/filters:format(webp)/media/movies/covers/2011/06/c5e6834581eef6444e8173bfdddaef79.jpg",
+        "poster": "https://www.themoviedb.org/t/p/original/2MSGZEE6XZd2r4ODNziwAw7Hpw0.jpg",
         "fundo": "https://blog.thenorthface.com.br/wp-content/uploads/2017/09/into-the-wild-original.jpg"
     },
     {
@@ -442,7 +442,7 @@ const filmesNovos = [
         cardCapa: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC1vTYWB5tVMMI_wGPmKd50eZr_BP7fLi-VQ&s",
         video: "4a8Ut-mVRLc",
         logo: "https://i.pinimg.com/736x/a2/50/19/a2501994ae7c6fe96deb3f867679f3e0.jpg",
-        poster: "https://static.wikia.nocookie.net/dublagem/images/4/43/Valente.jpeg/revision/latest?cb=20240617225729&path-prefix=pt-br",
+        poster: "https://4.bp.blogspot.com/-rxxojrV39Zk/UZ6A5HJuKWI/AAAAAAAAAIA/wB4Qb2zo8fE/s1600/valente_7.jpg",
         fundo: "https://historinhaspradormir.com.br/wp-content/uploads/2024/09/merida_valente.jpg",
     },
     {
@@ -453,7 +453,7 @@ const filmesNovos = [
         cardCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgynmiqa8DDpm7jfvD1ouHXPNSi-2U1PivmLug_BgKF0PcBEIpTDSKNjN169nr-7qBVqvTx0DhjqE2UTVsxu1mvxN-UVYJwRjIS1iBR-3RlPPgzTSjS5LQUWI8ofPr_Abw0TlkuDu6jK4eN/s1600/monstros+sa+1.jpg",
         video: "iRh2kF-1X2E",
         logo: "https://i.pinimg.com/originals/b2/dd/82/b2dd82b2fba01eef1d24d056b6b72e59.png",
-        poster: "https://static.wikia.nocookie.net/disney/images/4/44/Monstros_S.A._%282001%29_P%C3%B4ster.jpg/revision/latest?cb=20240311040627&path-prefix=pt-br",
+        poster: "https://tse4.mm.bing.net/th/id/OIP.d0Lua7eF6Qeyg0_rhYJsRgHaLH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
         fundo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho0EB3obJiPJGis3kVLzlCfD32BwxWUtgR6q4_XK2axWtzEzrj7yJuFru5DZ_Y-AGBolOLq-SiOCxPRgnuceo8eUy_6nRNZiSFU_kFmo0px7aerNWxghCXnGwxpQesctyq8pI_w1nliIM/s1600/monsters+inc-xlarge.jpg",
     },
     {
