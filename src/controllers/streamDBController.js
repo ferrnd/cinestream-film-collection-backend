@@ -1,6 +1,7 @@
 // src/controllers/streamDBController.js
 
 import * as streamDBModel from "../models/streamDBModel.js";
+import * as generoModel from "../models/generoModel.js";
 
 // Listar Todos
 export const listarTodos = async (req, res) => {
@@ -60,11 +61,11 @@ export const listarUm = async (req, res) => {
 // Criar (ATUALIZADO)
 export const criar = async (req, res) => {
     try {
-        // Incluindo cardCapa na desestruturação (opcional)
-        const { nome, descricao, classificacao, anoLancamento, cardCapa, video, logo, poster, fundo } = req.body;
-        
-        // cardCapa ADICIONADO como campo obrigatório
-        const camposObrigatorios = ["nome", "descricao", "classificacao", "anoLancamento", "cardCapa"]; 
+		// Incluindo cardCapa, generoId e elenco na desestruturação (opcional)
+		const { nome, descricao, classificacao, anoLancamento, cardCapa, video, logo, poster, fundo, generoId, elenco } = req.body;
+        
+		// cardCapa ADICIONADO como campo obrigatório
+		const camposObrigatorios = ["nome", "descricao", "classificacao", "anoLancamento", "cardCapa"]; 
 
         const faltando = camposObrigatorios.filter((campo) => !req.body[campo]);
         if (faltando.length > 0) {
@@ -73,7 +74,19 @@ export const criar = async (req, res) => {
             });
         }
 
-	const novoStream = await streamDBModel.criar(req.body);
+		// Se veio generoId, validar se existe
+		if (generoId) {
+			const g = await generoModel.encontreUm(generoId);
+			if (!g) {
+				return res.status(400).json({ error: `Genero with id ${generoId} not found` });
+			}
+		}
+
+		const payload = { ...req.body };
+		// garantir que elenco seja string quando enviado
+		if (elenco && Array.isArray(elenco)) payload.elenco = elenco.join(', ');
+
+		const novoStream = await streamDBModel.criar(payload);
         res.status(201).json({
             message: "Stream created successfully!",
             stream: novoStream,
