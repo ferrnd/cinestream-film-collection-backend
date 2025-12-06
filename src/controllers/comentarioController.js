@@ -98,3 +98,32 @@ export const criarComentario = async (req, res) => {
         });
     }
 };
+
+export const deletarComentario = async (req, res) => {
+    try {
+        const id = req.params.id;
+        if (!id) {
+            return res.status(400).json({
+                error: "Required field missing",
+                message: "The comment ID must be provided in the route parameters.",
+                status: 400,
+            });
+        }
+
+        const result = await comentariosModel.deleteComentarioById(id);
+        if (!result || result.count === 0) {
+            return res.status(404).json({
+                message: `Comment with id ${id} not found or already deleted`,
+                status: 404,
+            });
+        }
+
+        return res.status(204).send();
+    } catch (error) {
+        return res.status(500).json({
+            error: "Error deleting comment",
+            details: error.message,
+            status: 500,
+        });
+    }
+};
