@@ -28,7 +28,6 @@ The team needed an organized and easily searchable digital catalog of films and 
 
 ### **Functionality**
 
-* **Front-end:** Implements **GET** (list all) and **GETbyID** (view details) operations.
 * **Back-end:** Provides a complete **CRUD** (Create, Read, Update, Delete) API for maintenance of the collection.
 
 ### **Database Schema**
